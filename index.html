@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleaning Kraken - Ocean Cleanup Innovation</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Color Palette */
+        :root {
+            --primary: #d32f2f;
+            --primary-dark: #9a0007;
+            --primary-light: #ff6659;
+            --accent: #ffebee;
+            --background: #fafafa;
+            --text: #333;
+        }
+
+        /* Universal Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+        .section {
+            padding: 4rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: var(--primary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 2rem;
+        }
+
+        /* Details Section */
+        .details h2 {
+            text-align: center;
+            color: var(--primary-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .details p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--accent);
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .icon {
+            margin-right: 0.5rem;
+        }
+
+        .impact-summary {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fafafa;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Media Section */
+        .media-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Team Section */
+        .team-photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .team-photo-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: var(--primary-light);
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <h2>Kleaning Kraken</h2>
+            <nav>
+                <a href="#innovation">Innovation</a>
+                <a href="#impact">Impact</a>
+                <a href="#prototype">Prototype</a>
+                <a href="#team">Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Graphic -->
+    <section class="hero">
+        <div class="container">
+            <svg class="logo" viewBox="0 0 400 300" fill="white">
+                <path d="M0 180 L150 80 L300 180 M150 180 L280 100 L400 180" stroke="white" fill="none" stroke-width="8"/>
+                <path d="M50 150 C100 170, 300 170, 400 180 L400 300 L0 300 Z"/>
+                <path d="M35 150 L75 150 L55 120 Z M38 130 L72 130 L55 100 Z M40 110 L70 110 L55 80 Z"/>
+            </svg>
+            <h1>Kleaning Kraken</h1>
+            <p>Transforming shipping vessels into ocean cleanup systems to combat ocean pollution.</p>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section id="innovation" class="section details">
+        <div class="container">
+            <h2>The Innovation</h2>
+            <p>The Kleaning Kraken is an advanced underwater collection system featuring dual retractable arms supporting a specialized net structure.</p>
+        </div>
+    </section>
+
+    <!-- Stats Section with Detailed Impact Explanation -->
+    <section id="impact" class="section stats">
+        <div class="container">
+            <h2>Environmental Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card"><i class="fas fa-ship icon"></i><div class="stat-number">50,000</div><p>Commercial vessels eligible for installation</p></div>
+                <div class="stat-card"><i class="fas fa-route icon"></i><div class="stat-number">8M</div><p>Nautical miles covered annually</p></div>
+                <div class="stat-card"><i class="fas fa-recycle icon"></i><div class="stat-number">11M</div><p>Metric tons of plastic entering oceans annually</p></div>
+            </div>
+            <div class="impact-summary">
+                <p>Based on our calculations, if the Kleaning Kraken were installed on just 20% of eligible vessels, it could potentially collect up to 1.2 million metric tons of ocean plastic annually. This represents approximately 11% of the new plastic entering our oceans each year, making a significant impact on ocean pollution reduction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section id="prototype" class="section media-section">
+        <div class="container">
+            <h2>Prototype Model</h2>
+            <div class="media-container">
+                <img src="/api/placeholder/600/400" alt="Kleaning Kraken Prototype">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-photo-container">
+                <img src="/api/placeholder/400/300" alt="Team Photo">
+                <img src="/api/placeholder/400/300" alt="Team T-shirt">
+            </div>
+            <div class="team-members">
+                <div class="team-member">Lucas</div>
+                <div class="team-member">Penelope</div>
+                <div class="team-member">Ryan</div>
+                <div class="team-member">Davina</div>
+                <div class="team-member">Seth</div>
+                <div class="team-member">Shrirang</div>
+                <div class="team-member">Lyndon</div>
+                <div class="team-member">Maddy</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
